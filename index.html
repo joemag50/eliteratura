@@ -2,61 +2,27 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <title>E-Literatura</title>
-  <!--Agregamos una fuente-->
-  <style type="text/css">
-    .rainbow { 
-      height: 100%;
-      width: 100%;
-      left:0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      position: absolute;
-    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
-    background-size: 1800% 1800%;
-
-    -webkit-animation: rainbow 18s ease infinite;
-    -z-animation: rainbow 18s ease infinite;
-    -o-animation: rainbow 18s ease infinite;
-      animation: rainbow 18s ease infinite;}
-
-    @-webkit-keyframes rainbow {
-        0%{background-position:0% 82%}
-        50%{background-position:100% 19%}
-        100%{background-position:0% 82%}
-    }
-    @-moz-keyframes rainbow {
-        0%{background-position:0% 82%}
-        50%{background-position:100% 19%}
-        100%{background-position:0% 82%}
-    }
-    @-o-keyframes rainbow {
-        0%{background-position:0% 82%}
-        50%{background-position:100% 19%}
-        100%{background-position:0% 82%}
-    }
-    @keyframes rainbow { 
-        0%{background-position:0% 82%}
-        50%{background-position:100% 19%}
-        100%{background-position:0% 82%}
-    }
-
-    @font-face {
-      font-family: space_mono;
-      src: url('fonts/space_mono/SpaceMono-Regular.ttf');
-      font-weight:400;
-      font-weight:normal;
-    }
-  </style>
-  <script type="text/javascript" src="phaser.min.js"></script>
-  <script type="text/javascript" src="rexuiplugin.min.js"></script>
-  <script type="text/javascript" src="juego.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Traslados</title>
+  <!--Estilos y JS-->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/bulma-rtl.min.css">
   <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
 </head>
 
 <body>
-  <div style="font-family:space_mono; position:absolute; left:-1000px; visibility:hidden;">.</div>
-  <div id="gameDiv" class="rainbow"> </div>
+  <div class="rainbow">
+    <div id="objeto" class="columns is-vcentered is-size-1">
+      <div class="column">
+        <h1><a href="htmls/traslado_1.html">Traslado 1</a></h1>
+      </div>
+      <div class="column">
+        <h1><a href="htmls/traslado_2.html">Traslado 2</a></h1>
+      </div>
+      <div class="column">
+        <h1><a href="htmls/traslado_3.html">Traslado 3</a></h1>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

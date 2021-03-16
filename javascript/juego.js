@@ -1,0 +1,130 @@
+// JCGE: 2021-02-27
+// Juego para e-literatura
+const COLOR_PRIMARY = 0x0e0d0d;
+const COLOR_LIGHT = 0x7b5e57;
+const COLOR_DARK = 0x260e04;
+
+var size_w = 1000,
+    size_h = 750,
+    background_color = '#0e0d0d',
+    left_margin = 120,
+    top_margin = 95,
+    line_space = 0;
+
+var font_vars = {
+    fontFamily: 'space_mono',
+    fill: '#1ecd36'
+}
+
+var font_vars_selected = {
+    fontFamily: 'space_mono',
+    fill: '#FFFFFF'
+}
+
+var font_vars_hidden = {
+  fontFamily: 'space_mono',
+  fill: '#0e0d0d'
+}
+
+var poema1 = [
+  "Te pienso como una nube dentro",
+  "esponjada en tu cabello en mi boca",
+  "contigo todo interior cosa de carne",
+  "una isla mi pecho tu paisaje",
+  "una guía de mi barrio tus piernas",
+  "escrita en la cintura y la frente la manera de tu voz y los planetas",
+  "los descubre alrededor del sol",
+  "como un pedazo de coágulo",
+  "en las encías de una boca abierta",
+  "de tu boca que y sin embargo se mueve",
+  "se gira hacia la izquierda",
+  "mi voz poco visitada",
+  "mis canciones de niño lindo",
+  "que no mato",
+  "que no mató más que animales más que hormigas",
+  "solo nos dio azoteas",
+  "donde mirábamos las calles",
+  "las ventanas encendidas",
+  "era bueno tener una luz",
+  "qué fue de la lluvia",
+  "de tus labios en mi cejas",
+  "de tener los pies pequeños bañados en alcohol",
+  "envueltos como el calor entre las manos",
+  "eso sabías de las flores entre el concreto que florecen",
+  "las arrancamos",
+  "y veíamos desde el puente",
+  "iremos que te extraño a cortarlas",
+  "caminando en fila india por el tren",
+  "te diré que no volverán a perseguirte",
+  "pegados tus dedos a los míos",
+  "era yo un chiquillo",
+  "y no iba a la escuela porque no aguantaba",
+  "despierto porque las flores no se abren",
+  "son seis horas porque el paisaje se oye",
+  "nomás por verte",
+  "iremos a la frontera se garapiña",
+  "como en la lengua un dulce de leche",
+  "sobre mi infancia de glaciar mesopotámico",
+  "como piratas dueños de la isla iremos",
+  "a cada cajero cada llave buscando esa casa",
+  "por el tesoro aquel",
+  "vamos por un cuerpo",
+  "era el mío en la banqueta con la sangre",
+  "era mi cuerpo sobre la tinta",
+  "sobre el cañón pelado",
+  "¿no me reconoces?",
+  "ahora felices de miseria",
+  "éramos una hendidura",
+  "por donde soplaba todo",
+  "era rojo como pitaya",
+  "era esa cavidad",
+  "se me abría en la piel",
+  "se me abría en la frente",
+  "un agujero ancho por donde todo entraba",
+  "por donde todo se nos hundió",
+  "hacia afuera",
+
+  "Qué hermosa es la desviación de los instintos",
+  "sostenerme el corazón así por fuera",
+  "a un costado",
+  "de su ritmo es mi sombra la pared",
+  "aquel gesto de mi mano",
+  "consumido por el fuego",
+  "del fuego por sí mismo consumido",
+  "lo que quiero es la luz del movimiento",
+  "aquí en la piel que arranca sangre a socavones",
+  "de angustiosa encarnación",
+  "el ser aglutinado y desteñido",
+  "en la abisal distancia de pronombres",
+  "mi cara otra vez nomas que atravesada",
+  "por esta estéril procreación",
+  "enterrada y tupida entre la sal",
+  "mi renuncia llamarada en el ritmo de lo humano",
+  "mirruñita entre las manos",
+  "es tu gesto de un paso",
+  "es el hombre es quien pisa",
+  "es el testigo entre la fiebre",
+  "el primero de los cambios sucede en el registro de la venas",
+  "se me alargan",
+  "es la que se me abre entre la carne",
+  "y duele",
+
+  "En el mundo todo tiene su ritmo",
+  "las palabras se estrellan en sí mismas",
+  "cada una se deshace en su forma",
+  "conteniendo materialmente los sentidos",
+  "los vagones, el corazón, sus afectos",
+  "todo encuentra su cabida",
+  "no hay ciudad en el planeta",
+  "que pare de sonar",
+  "el latido simplemente es una cosa de acentos",
+  "de respiración",
+  "en Estambul cincuenta mil perros fueron capturados",
+  "y abandonados en una isla",
+  "se comieron unos a otros",
+  "los aullidos se escucharon por semanas",
+  "y nadie volvió por ellos",
+  "volteo mi gato ronronea",
+  "ha venido a buscarme:",
+  "Camelia, gracias por seguir buscándome."
+]
