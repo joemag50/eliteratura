@@ -1,4 +1,4 @@
-var titulo_juego3 = [
+var titulo_juego = [
   String.raw`::::::::::: :::::::::      :::      ::::::::  `,
   String.raw`    :+:     :+:    :+:   :+: :+:   :+:    :+: `,
   String.raw`    +:+     +:+    +:+  +:+   +:+  +:+        `,
@@ -102,9 +102,9 @@ var MenuTraslado3 = new Phaser.Class({
     this.cameras.main.setBackgroundColor(background_color);
 
     posX = 100
-    for (var i = 0; i < titulo_juego3.length; i++) {
+    for (var i = 0; i < titulo_juego.length; i++) {
       posX += 25;
-      this.add.text(140, posX, titulo_juego3[i], font_vars);
+      this.add.text(140, posX, titulo_juego[i], font_vars);
     }
 
     // texto = this.add.text((size_w/2) - 100, (size_h/2) + 170, 'Segundo juego tal vez?', font_vars);
