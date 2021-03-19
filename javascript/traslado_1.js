@@ -46,6 +46,8 @@ var JuegoTraslado1 = new Phaser.Class({
       repeat: 0
     });
 
+    var vid = 0;
+
     view_master_device.setInteractive();
     view_master_device.on('pointerdown', function () {
       rotate_pls = 1;
@@ -53,6 +55,8 @@ var JuegoTraslado1 = new Phaser.Class({
       cody = this.add.sprite(size_w/2, size_h/2);
       cody.setScale(size_w/128, size_h/128);
       cody.on(Phaser.Animations.Events.ANIMATION_COMPLETE, function (anim) {
+        if (vid != 0) { vid.destroy(); }
+
         cody.destroy();
         view_master_device.visible = true;
         rotate_pls = 0;
@@ -62,9 +66,62 @@ var JuegoTraslado1 = new Phaser.Class({
           actual_video = 1;
         }
         actual_video += 1;
-        var vid = this.add.video(0, 0, 'video' + actual_video);
+        vid = this.add.video(0,0, 'video' + actual_video);
         vid.setOrigin(0, 0);
-        vid.setScale(2, 2);
+        vid.displayWith = 200;
+
+        switch (actual_video) {
+          case 2:
+            vid.setScale(4.5, 3.9);
+            break;
+          case 3:
+            vid.setScale(1, 1.2);
+            break;
+          case 4:
+            vid.setScale(4.6, 4);
+            break;
+          case 5:
+            vid.setScale(1, 1.2);
+            break;
+          case 6:
+            vid.setScale(2.3, 2.5);
+            break;
+          case 7:
+            vid.setScale(1, 1.2);
+            break;
+          case 8:
+            vid.setScale(2.5, 3);
+            break;
+          case 9:
+            vid.setScale(1, 1.2);
+            break;
+          case 10:
+            vid.setScale(5, 4.6);
+            break;
+          case 11:
+            vid.setScale(2.5,2.5);
+            break;
+          case 12:
+            vid.setScale(5, 4.6);
+            break;
+          case 13:
+            vid.setScale(1, 1.5);
+            break;
+          case 14:
+            vid.setScale(4.5, 4.5);
+            break;
+          case 15:
+            vid.setScale(1, 1.3);
+            break;
+          case 16:
+            vid.setScale(4.5, 4.5);
+            break;
+          case 17:
+            vid.setScale(4.5, 4.5);
+            break;
+          default:
+        }
+
         vid.play();
         vid.on(Phaser.GameObjects.Events.VIDEO_COMPLETE, () => {
           vid.destroy();
@@ -74,11 +131,11 @@ var JuegoTraslado1 = new Phaser.Class({
     }, this);
 
     // Debug line
-    var graphics = this.add.graphics();
-    graphics.lineStyle(2, 0x00ff00, 1);
-    graphics.lineBetween(size_w/2, 0, size_w/2, size_h);
-    graphics.lineBetween(0, size_h/2, size_w, size_h/2);
-    graphics.lineBetween(0, (size_h/2) + 150, size_w, (size_h/2) + 150);
+    // var graphics = this.add.graphics();
+    // graphics.lineStyle(2, 0x00ff00, 1);
+    // graphics.lineBetween(size_w/2, 0, size_w/2, size_h);
+    // graphics.lineBetween(0, size_h/2, size_w, size_h/2);
+    // graphics.lineBetween(0, (size_h/2) + 150, size_w, (size_h/2) + 150);
   },
   update: function() {
     if (rotate_pls == 1) {
