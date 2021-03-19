@@ -35,7 +35,7 @@ var JuegoTraslado3 = new Phaser.Class({
   },
   create: function(){
     this.cameras.main.setBackgroundColor(background_color);
-    this.add.text(180, 90, 'Encuentra con el mouse mi poema', font_vars);
+    this.add.text(180, 90, 'Encuentra con un click mi poema', font_vars);
     var salir = this.add.text(size_w-200, 90, 'X', font_vars);
     salir.setInteractive();
     salir.once('pointerdown', function () {
