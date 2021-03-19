@@ -1,3 +1,5 @@
+// JCGE: este es como un click and find del poema
+
 var titulo_juego = [
   String.raw`::::::::::: :::::::::      :::      ::::::::  `,
   String.raw`    :+:     :+:    :+:   :+: :+:   :+:    :+: `,

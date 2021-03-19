@@ -1,3 +1,5 @@
+// JCGE: Este es el juego llamado view master
+// Simula un view master y pone videos
 var rotate_pls = 0,
     actual_video = 1;
 
